@@ -1,0 +1,139 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CSC__301_project.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server"> 
+   
+    
+    <title><%: Page.Title %> - KEYCARD SYSTEM</title>
+
+    <%--Bootstrap css--%>
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- project css--%>
+    <link href="Css/Stylesheet1.css" rel="stylesheet" />
+
+    <%--datatables css--%>
+    <link href="datatables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    
+    <%--jquery js--%>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <%--popper--%>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <%--bootstrap--%>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+     <%--Datatables js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+
+    <asp:PlaceHolder ID="head" runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+   <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      
+</head>
+<body style="background-color:darkslategray">
+    
+           <form id="form1" runat="server">
+        <div>
+             <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    
+                    <img src="pictures/8703780_card_credit_payment_money_icon.png" width="80" height="80" />
+                    Keycard
+                </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton4"   BackColor="ForestGreen"  Visible="false" runat="server"   href="#">Hello </asp:LinkButton>
+                        </li>
+
+                       <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton1"   BackColor="ForestGreen" Visible="false" runat="server" href="#">Administrator</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton5" OnClick="LinkButton5_Click"  Visible="true" runat="server" href="default.aspx">Home</asp:LinkButton>
+                        </li>
+
+                       <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton6"  OnClick="LinkButton6_Click" Visible="true" runat="server" href="Sign up1.aspx">Sign up</asp:LinkButton>
+                        </li>
+
+                       <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton7"  OnClick="LinkButton7_Click"  Visible="true" runat="server"  href="Student login1.aspx">Student login</asp:LinkButton>
+                        </li>
+
+                       <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton8"  OnClick="LinkButton8_Click"  Visible="true" runat="server" href="Admin login1.aspx">Admin login</asp:LinkButton>
+                        </li>
+
+                   </ul>
+
+
+                    <ul class="navbar-nav">
+                         
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3"   OnClick="LinkButton3_Click" Visible="false" runat="server">Admin sign up</asp:LinkButton>
+                        </li>
+
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton10"   OnClick="LinkButton10_Click" Visible="false" runat="server" >Students </asp:LinkButton>
+                        </li>
+
+                          <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton11"   OnClick="LinkButton11_Click"  Visible="false" runat="server" > Report</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton9"   OnClick="LinkButton9_Click" Visible="true" runat="server" href="Help1.aspx">Help</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton2"  OnClick="LinkButton2_Click"  Visible="false" runat="server" >log out</asp:LinkButton>
+                        </li>
+
+                    </ul>
+                </div>
+
+          </nav> 
+        </div>
+        
+
+        
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+
+
+            <footer>
+                <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <p>&copy;Keycard system <%: DateTime.Now.Year %> </p>
+                    </div>
+                </div>
+                    </div>
+                 
+                
+            </footer>
+                
+            <hr />
+            
+        
+     
+    </form>
+</body>
+</html>
