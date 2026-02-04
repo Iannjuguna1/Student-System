@@ -28,10 +28,7 @@
 
 
     <asp:PlaceHolder ID="head" runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
-    <webopt:bundlereference runat="server" path="~/Content/css" />
    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -62,19 +59,19 @@
                             <asp:LinkButton class="nav-link" ID="LinkButton1"   BackColor="ForestGreen" Visible="false" runat="server" href="#">Administrator</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton5" OnClick="LinkButton5_Click"  Visible="true" runat="server" href="default.aspx">Home</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton5" OnClick="LinkButton5_Click"  Visible="true" runat="server" href="Home.aspx">Home</asp:LinkButton>
                         </li>
 
                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton6"  OnClick="LinkButton6_Click" Visible="true" runat="server" href="Sign up1.aspx">Sign up</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton6"  OnClick="LinkButton6_Click" Visible="true" runat="server" href="Student sign up.aspx">Sign up</asp:LinkButton>
                         </li>
 
                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7"  OnClick="LinkButton7_Click"  Visible="true" runat="server"  href="Student login1.aspx">Student login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton7"  OnClick="LinkButton7_Click"  Visible="true" runat="server"  href="Student login.aspx">Student login</asp:LinkButton>
                         </li>
 
                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton8"  OnClick="LinkButton8_Click"  Visible="true" runat="server" href="Admin login1.aspx">Admin login</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton8"  OnClick="LinkButton8_Click"  Visible="true" runat="server" href="Admin Login.aspx">Admin login</asp:LinkButton>
                         </li>
 
                    </ul>
@@ -97,7 +94,7 @@
                         </li>
 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton9"   OnClick="LinkButton9_Click" Visible="true" runat="server" href="Help1.aspx">Help</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton9"   OnClick="LinkButton9_Click" Visible="true" runat="server" href="Help.aspx">Help</asp:LinkButton>
                         </li>
 
                         <li class="nav-item active">

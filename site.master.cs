@@ -97,30 +97,30 @@ namespace CSC__301_project
 
 
         }
-            protected void LinkButton3_Click(object sender, EventArgs e)
+        protected void LinkButton3_Click(object sender, EventArgs e)
             {
-                Response.Redirect("Admin sign up1.aspx");
+                Response.Redirect("Admin sign up.aspx");
             }
        
 
         protected void LinkButton5_Click(object sender, EventArgs e)
         {
-            Response.Redirect("default.aspx");
+            Response.Redirect("Home.aspx");
         }
 
         protected void LinkButton6_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Sign up1.aspx");
+            Response.Redirect("Student sign up.aspx");
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Student login1.aspx");
+            Response.Redirect("Student login.aspx");
         }
 
         protected void LinkButton8_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Admin login1.aspx");
+            Response.Redirect("Admin Login.aspx");
         }
 
         protected void LinkButton9_Click(object sender, EventArgs e)
