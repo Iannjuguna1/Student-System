@@ -66,7 +66,7 @@ namespace CSC__301_project
 
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
